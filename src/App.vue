@@ -2,7 +2,9 @@
   <div id="app">
     <div id="nav">
       <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/about">About</router-link> |
+      <router-link to="/listjob">รายการงาน</router-link> |
+      <router-link to="/tracking">ติดตามรถบรรทุก</router-link>
     </div>
     <router-view/>
   </div>
@@ -28,5 +30,10 @@
       color: #42b983;
     }
   }
+}
+
+#iframe1 {
+width: 100%;
+height: 100vh;
 }
 </style>

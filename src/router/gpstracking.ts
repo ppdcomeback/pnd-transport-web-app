@@ -1,7 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
-import GPStracking from '../views/GPStracking.vue'
 
 Vue.use(VueRouter)
 
@@ -27,7 +26,8 @@ const routes = [
   {
     path: '/tracking',
     name: 'tracking',
-    component: GPStracking
+
+    component: () => import('../views/GPStracking.vue')
   }
 ]
 
