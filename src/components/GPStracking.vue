@@ -6,5 +6,7 @@
 
 <script lang="ts">
 import { Component, Prop, Vue } from 'vue-property-decorator'
-@Component export default class GPSTracking extends Vue {@Prop() private gpstrackingweb!: string;}
+@Component export default class GPSTracking extends Vue {
+  @Prop() private gpstrackingweb!: string;
+}
 </script>

@@ -1,5 +1,5 @@
 <template>
-    <GPSTracking gpstrackingweb="http://www.igpstracking.net/"/>
+    <GPSTracking/>
 </template>
 
 <script>
