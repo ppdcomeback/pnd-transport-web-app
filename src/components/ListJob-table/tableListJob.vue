@@ -1,0 +1,18 @@
+<template>
+  <thead class="thead-dark">
+    <th scope="col">วันที่</th>
+    <th scope="col">ชื่อลูกค้า</th>
+    <th scope="col">ชื่อพนักงาน</th>
+    <th scope="col">ชนิดรถ</th>
+    <th scope="col">รายการ</th>
+    <th scope="col">ราคา</th>
+    <th scope="col">การชำระเงิน</th>
+  </thead>
+</template>
+
+<script lang="ts">
+import { Component, Prop, Vue } from 'vue-property-decorator'
+import trListJob from '@/components/ListJob-table/trListJob.vue'
+@Component
+export default class tableListjob extends Vue {}
+</script>

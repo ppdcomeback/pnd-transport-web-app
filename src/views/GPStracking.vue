@@ -1,5 +1,8 @@
 <template>
-    <GPSTracking/>
+    <div>
+      <h1>This is an GPSTracking page</h1>
+      <GPSTracking/>
+    </div>
 </template>
 
 <script>
