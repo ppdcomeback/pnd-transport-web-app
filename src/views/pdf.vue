@@ -2,7 +2,7 @@
     <div>
         <input type="checkbox" v-model="show">
         <select v-model="src" style="width: 30em">
-            <!--<option v-for="item in pdfList" :value="item" v-text="item" :key="item"></option>-->
+            --<option v-for="item in pdfList" :value="item" v-text="item" :key="item"></option>-->
         </select>
         <input v-model.number="page" type="number" style="width: 5em"> /{{numPages}}
         <button @click="$refs.pdf.print()">print</button>
