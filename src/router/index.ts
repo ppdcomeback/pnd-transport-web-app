@@ -2,27 +2,8 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import GPStracking from '../views/GPStracking.vue'
-import VueHtmlToPaper from 'vue-html-to-paper'
-import 'bootstrap/dist/css/bootstrap.min.css'
-import 'bootstrap'
-
-const VueHtmlToPaperoptions = {
-  name: '_blank',
-  specs: [
-    'fullscreen=yes',
-    'titlebar=yes',
-    'scrollbars=yes'
-  ],
-  styles: [
-    'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css',
-    'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js'
-  ]
-}
-
-Vue.use(VueHtmlToPaper, VueHtmlToPaperoptions)
 
 Vue.use(VueRouter)
-
 const routes = [
   {
     path: '/',

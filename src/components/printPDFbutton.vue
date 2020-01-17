@@ -3,6 +3,10 @@
 </template>
 
 <script>
+
+import { Printd } from 'printd'
+// const css = 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css'
+const d = new Printd()
 export default {
   data () {
     return {
@@ -11,8 +15,7 @@ export default {
   },
   methods: {
     print () {
-      // Pass the element id here
-      this.$htmlToPaper('ListJobTable', () => { console.log('Printing completed or was cancelled!') })
+      d.print(document.getElementById('ListJobTable'))
     }
   }
 }

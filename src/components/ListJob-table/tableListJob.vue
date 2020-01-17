@@ -9,9 +9,3 @@
     <th scope="col">การชำระเงิน</th>
   </thead>
 </template>
-
-<script lang="ts">
-import { Component, Prop, Vue } from 'vue-property-decorator'
-@Component
-export default class tableListjob extends Vue {}
-</script>

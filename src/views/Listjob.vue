@@ -12,18 +12,21 @@
       <table class="table table-hover">
         <thListJob/>
         <trListJob/>
-    </table>
+        <Summary/>
+      </table>
     </div>
   </div>
 </template>
 
 <script>
+import Summary from '@/components/summary-bottom.vue'
 import thListJob from '@/components/ListJob-table/tableListJob.vue'
 import trListJob from '@/components/ListJob-table/trListJob.vue'
 import printPDFbutton from '@/components/printPDFbutton.vue'
 export default {
   name: 'listjob',
   components: {
+    Summary,
     thListJob,
     trListJob,
     printPDFbutton
