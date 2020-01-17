@@ -1,6 +1,6 @@
 <template>
   <div class="listjob">
-    <div class="row">
+    <div class="row w-100">
       <div class="col" id="ListJobHeader">
         <h1>This is a listjob page</h1>
       </div>
@@ -9,7 +9,7 @@
       </div>
     </div>
     <div id="ListJobTable">
-      <table class="table table-hover">
+      <table class="table table-hover table-bordered">
         <thListJob/>
         <trListJob/>
         <Summary/>

@@ -1,5 +1,5 @@
 <template>
-    <button @click="print" type="button" class="btn btn-primary" id="printContent">พิมพ์เอกสาร</button>
+    <button @click="print" type="button" class="btn btn-primary glyphicon glyphicon-name" id="printContent">พิมพ์เอกสาร</button>
 </template>
 
 <script>
