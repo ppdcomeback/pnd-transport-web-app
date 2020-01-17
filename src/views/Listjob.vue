@@ -1,14 +1,14 @@
 <template>
   <div class="listjob">
     <div class="row">
-      <div class="col">
+      <div class="col" id="ListJobHeader">
         <h1>This is a listjob page</h1>
       </div>
       <div class="col-2">
         <printPDFbutton/>
       </div>
     </div>
-    <div>
+    <div id="ListJobTable">
       <table class="table table-hover">
         <thListJob/>
         <trListJob/>

@@ -12,7 +12,6 @@
 
 <script lang="ts">
 import { Component, Prop, Vue } from 'vue-property-decorator'
-import trListJob from '@/components/ListJob-table/trListJob.vue'
 @Component
 export default class tableListjob extends Vue {}
 </script>
