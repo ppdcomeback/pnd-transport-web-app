@@ -27,6 +27,11 @@ const routes = [
     path: '/tracking',
     name: 'tracking',
     component: GPStracking
+  },
+  {
+    path: '/printlistjob',
+    name: 'ptintjistjob',
+    component: () => import('../components/printer/listjob-print.vue')
   }
 ]
 

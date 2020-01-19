@@ -18,7 +18,8 @@ var mysql = require('mysql')
 var con = mysql.createConnection({
   host: 'localhost',
   user: 'root',
-  password: ''
+  password: '',
+  database: 'pnd-web-serv'
 })
 con.connect(function (err: any) {
   if (err) throw err

@@ -1,5 +1,5 @@
 <template>
-  <thead class="thead-dark">
+  <thead class="thead-dark" id="table-header">
     <th scope="col">#</th>
     <th scope="col">วันที่</th>
     <th scope="col">ชื่อลูกค้า</th>

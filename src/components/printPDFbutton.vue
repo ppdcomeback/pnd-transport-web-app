@@ -5,7 +5,8 @@
 <script>
 
 import { Printd } from 'printd'
-// const css = 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css'
+const btcss = 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css'
+const cssText = '#table-header{ color: yellow;}'
 const d = new Printd()
 export default {
   data () {
@@ -15,7 +16,12 @@ export default {
   },
   methods: {
     print () {
-      d.print(document.getElementById('ListJobTable'))
+      // d.print(document.getElementById('ListJobTable'), [btcss])
+      d.printURL('http://localhost:8080/printlistjob', ({ launchPrint }) => {
+        console.log('Content loaded!')
+        // fire printing!
+        launchPrint()
+      })
     }
   }
 }
