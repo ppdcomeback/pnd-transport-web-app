@@ -2,10 +2,7 @@
   <div class="listjob" id="print-listjob">
     <div class="row w-100">
       <div class="col" id="ListJobHeader">
-        <h1>This is a PRINTlistjob page</h1>
-      </div>
-      <div class="col-2">
-        <printPDFbutton/>
+        <h1>Print</h1>
       </div>
     </div>
     <div id="ListJobTable">

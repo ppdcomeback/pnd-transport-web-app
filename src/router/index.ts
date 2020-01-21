@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import GPStracking from '../views/GPStracking.vue'
+import listjobrinter from '../components/printer/listjob-print.vue'
 
 Vue.use(VueRouter)
 const routes = [
@@ -31,7 +32,7 @@ const routes = [
   {
     path: '/printlistjob',
     name: 'ptintjistjob',
-    component: () => import('../components/printer/listjob-print.vue')
+    component: listjobrinter
   }
 ]
 
