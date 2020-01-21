@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "dev": "concurrently \"cd server npm run start\" \"npm run serve\"",
+    "server": "nodemon ./server/connectdb.ts",
+    "dev": "concurrently \"npm run serve\" \"npm run server\"",
     "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
     "test:e2e": "vue-cli-service test:e2e",

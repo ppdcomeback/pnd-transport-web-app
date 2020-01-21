@@ -1,9 +1,7 @@
-const mysql = require('mysql');
-const connection = mysql.createConnection({
-  host: 'localhost',
-  user: 'root',
-  password: '',
-  database: 'pnd-web-serv'
-});
+const express = require('express')
 
-export default connection
+let server = express()
+
+server.listen(3000, function () {
+  console.log('Server Listen at http://localhost:3000')
+})
