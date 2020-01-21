@@ -12,7 +12,3 @@
         </tr>
     </tbody>
 </template>
-
-<script>
-import querydb from '../../database/connectdb'
-</script>

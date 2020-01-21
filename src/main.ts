@@ -14,24 +14,3 @@ new Vue({
   store,
   render: h => h(App)
 }).$mount('#app')
-<<<<<<< HEAD
-
-new Vue({
-  router,
-  store,
-  render: h => h(Printer)
-}).$mount('#printer')
-
-var mysql = require('mysql')
-var con = mysql.createConnection({
-  host: 'localhost',
-  user: 'root',
-  password: '',
-  database: 'pnd-web-serv'
-})
-con.connect(function (err: any) {
-  if (err) throw err
-  console.log('Connected Success!')
-})
-=======
->>>>>>> 70949866148e66d085c822a349d90282057954d4
