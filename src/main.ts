@@ -14,6 +14,7 @@ new Vue({
   store,
   render: h => h(App)
 }).$mount('#app')
+<<<<<<< HEAD
 
 new Vue({
   router,
@@ -32,3 +33,5 @@ con.connect(function (err: any) {
   if (err) throw err
   console.log('Connected Success!')
 })
+=======
+>>>>>>> 70949866148e66d085c822a349d90282057954d4
