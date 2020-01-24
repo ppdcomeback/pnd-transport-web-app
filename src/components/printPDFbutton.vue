@@ -21,7 +21,6 @@ export default {
     print () {
       // d.print(document.getElementById('ListJobTable'), [btcss])
       //
-
       d.printURL('http://localhost:8080/printlistjob', ({ launchPrint }) => {
         console.log('Content loaded!')
         // fire printing!

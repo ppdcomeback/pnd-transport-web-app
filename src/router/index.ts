@@ -4,6 +4,8 @@ import Home from '../views/Home.vue'
 import GPStracking from '../views/GPStracking.vue'
 import listjobrinter from '../components/printer/listjob-print.vue'
 
+var bodyParer = require('body-parser')
+
 Vue.use(VueRouter)
 const routes = [
   {

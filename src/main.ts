@@ -5,7 +5,6 @@ import router from './router'
 import store from './store'
 import 'bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import Printer from './components/printer/header-printer.vue'
 
 Vue.config.productionTip = false
 
