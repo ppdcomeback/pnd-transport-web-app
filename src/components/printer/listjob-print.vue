@@ -2,7 +2,7 @@
   <div class="listjob" id="print-listjob">
     <div class="row w-100">
       <div class="col" id="ListJobHeader">
-        <h1>Print</h1>
+        <Header/>
       </div>
     </div>
     <div id="ListJobTable">
@@ -16,12 +16,14 @@
 </template>
 
 <script>
+import Header from '@/components/printer/header-printer'
 import Summary from '@/components/summary-bottom.vue'
 import thListJob from '@/components/ListJob-table/tableListJob.vue'
 import trListJob from '@/components/ListJob-table/trListJob.vue'
 export default {
   name: 'listjob-print',
   components: {
+    Header,
     Summary,
     thListJob,
     trListJob

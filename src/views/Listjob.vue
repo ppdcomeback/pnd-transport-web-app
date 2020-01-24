@@ -29,6 +29,7 @@ import thListJob from '@/components/ListJob-table/tableListJob.vue'
 import trListJob from '@/components/ListJob-table/trListJob.vue'
 import printPDFbutton from '@/components/printPDFbutton.vue'
 import routerlink from '@/components/router-link.vue'
+import { Prop } from 'vue-property-decorator'
 
 export default {
   name: 'listjob',

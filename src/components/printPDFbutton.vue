@@ -5,11 +5,10 @@
 <script>
 
 import { Printd } from 'printd'
+import printURL from '@/components/ListJob-table/tableListJob'
 const btcss = 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css'
 const cssText = '#table-header{ color: yellow;}'
-
 const d = new Printd()
-// const d = new Printd()
 
 export default {
   data () {
@@ -19,9 +18,7 @@ export default {
   },
   methods: {
     print () {
-      // d.print(document.getElementById('ListJobTable'), [btcss])
-      //
-      d.printURL('http://localhost:8080/printlistjob', ({ launchPrint }) => {
+      d.printURL(printURL.printURL, ({ launchPrint }) => {
         console.log('Content loaded!')
         // fire printing!
         launchPrint()

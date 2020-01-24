@@ -10,3 +10,10 @@
     <th scope="col">การชำระเงิน</th>
   </thead>
 </template>
+
+<script>
+export default {
+  name: 'listjobTable',
+  printURL: 'http://localhost:8080/printlistjob'
+}
+</script>
