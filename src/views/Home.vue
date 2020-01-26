@@ -4,7 +4,6 @@
   <routerlink/>
 </div>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
     <HelloWorld msg="Welcome to Your PND App"/>
   </div>
 </div>
