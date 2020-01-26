@@ -1,9 +1,10 @@
+/* eslint-disable no-unreachable */
 <template>
     <tbody class="table-hover">
-        <tr v-bind="user" methods >
-            <th scope="row">{{ user.id }}</th>
-            <td>{{ user.date }}</td>
-            <td>{{ user.customer }}</td>
+        <tr>
+            <th scope="row"></th>
+            <td></td>
+            <td></td>
             <td>[sql]ชื่อพนักงาน</td>
             <td>[sql]ชนิดรถ</td>
             <td>[sql]รายการ</td>
@@ -14,13 +15,18 @@
 </template>
 
 <script>
-var app = new Vue({
-  el: '#app',
-  data: {
-    users: ''
+import axios from 'axios'
+export default {
+  data () {
+    return {
+      listjobs: []
+    }
   },
-  methods: {
-
+  created () {
+    let res = axios.get('../../../server/query.ts')
+    let data = res.data
+    console.log(data)
   }
-})
+}
+
 </script>
