@@ -8,4 +8,4 @@ const config = {
 }
 const connection = mysql.createConnection(config)
 
-module.exports = config
+export default connection
