@@ -15,6 +15,7 @@
 </template>
 
 <script>
+import listjobs from '../../../server/query'
 import axios from 'axios'
 export default {
   data () {
