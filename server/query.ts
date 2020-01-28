@@ -22,37 +22,26 @@ connection.query(sql, (error, results, fields) => {
   })
 })
 */
-const express = require('express')
-const app = express()
-const mysql = require('mysql')
-const config = {
-  host: 'localhost',
-  user: 'root',
-  password: '',
-  database: 'pnd-web-serv'
-}
-const connection = mysql.createConnection(config)
 
-app.get('/', function (req, res) {
-  const sql = 'SELECT * FROM listjobs'
+/* const sql = 'SELECT * FROM listjobs'
   connection.query(sql, (error, results, fields) => {
     if (error) {
       console.error(error.message)
     }
     for (let i = 0; i < results.length; i++) {
       var row = results[i]
-
-      /*  res.send(row)
-      res.send(true)
-      res.setHeader('Content-Type', 'application/json')
-      // res.json(row) */
-      console.dir(res.headersSent) // false
-      // res.send('OK')
-      console.dir(res.headersSent) // true
       console.log(row)
+      // res.send(results)
     }
-    res.send('OK')
+
   })
+}) */
+const express = require('express')
+const app = express()
+
+var test = require('./test.json')
+app.get('/', function (req, res) {
+  res.send(test)
 })
 
 app.listen(3000, function () {
