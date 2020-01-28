@@ -39,8 +39,19 @@ app.get('/', function (req, res) {
     if (error) {
       console.error(error.message)
     }
-    res.send(results)
-    console.log('it ok')
+    for (let i = 0; i < results.length; i++) {
+      var row = results[i]
+
+      /*  res.send(row)
+      res.send(true)
+      res.setHeader('Content-Type', 'application/json')
+      // res.json(row) */
+      console.dir(res.headersSent) // false
+      // res.send('OK')
+      console.dir(res.headersSent) // true
+      console.log(row)
+    }
+    res.send('OK')
   })
 })
 
