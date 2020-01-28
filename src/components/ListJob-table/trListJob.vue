@@ -1,11 +1,11 @@
 /* eslint-disable no-unreachable */
 <template>
-<div class="show">
+
     <tbody class="table-hover">
-        <tr>
+        <tr class="show">
             <th scope="row"> {{ user.name }} </th>
-            <td> {{user.lastname }} </td>
-            <td> {{user.customer }} </td>
+            <td> {{ user.lastname }} </td>
+            <td> {{ user.customer }} </td>
             <td>[sql]ชื่อพนักงาน</td>
             <td>[sql]ชนิดรถ</td>
             <td>[sql]รายการ</td>
@@ -13,7 +13,6 @@
             <td>[sql]การชำระเงิน</td>
         </tr>
     </tbody>
-</div>
 </template>
 
 <script>
@@ -23,7 +22,8 @@ export default {
   name: 'show',
   data () {
     return {
-      user: {}
+
+      user: []
     }
   },
   mounted () {
