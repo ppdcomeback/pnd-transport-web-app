@@ -1,4 +1,4 @@
-const mysql = require('mysql')
+/* const mysql = require('mysql')
 
 const config = {
   host: 'localhost',
@@ -21,5 +21,29 @@ connection.query(sql, (error, results, fields) => {
     console.log(row)
   })
 })
+*/
+const express = require('express')
+const app = express()
+const mysql = require('mysql')
+const config = {
+  host: 'localhost',
+  user: 'root',
+  password: '',
+  database: 'pnd-web-serv'
+}
+const connection = mysql.createConnection(config)
 
-export default row
+app.get('/', function (req, res) {
+  const sql = 'SELECT * FROM listjobs'
+  connection.query(sql, (error, results, fields) => {
+    if (error) {
+      console.error(error.message)
+    }
+    res.send(results)
+    console.log('it ok')
+  })
+})
+
+app.listen(3000, function () {
+  console.log('Test server')
+})

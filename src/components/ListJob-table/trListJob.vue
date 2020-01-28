@@ -1,10 +1,10 @@
 /* eslint-disable no-unreachable */
 <template>
     <tbody class="table-hover">
-        <tr>
-            <th scope="row"></th>
-            <td></td>
-            <td></td>
+        <tr class='show'>
+            <th scope="row"> {{ user.list_id }} </th>
+            <td> {{user.date }} </td>
+            <td> {{user.customer }} </td>
             <td>[sql]ชื่อพนักงาน</td>
             <td>[sql]ชนิดรถ</td>
             <td>[sql]รายการ</td>
@@ -15,19 +15,21 @@
 </template>
 
 <script>
-import listjobs from '../../../server/query'
 import axios from 'axios'
+
 export default {
+  name: 'show',
   data () {
     return {
-      listjobs: []
+      user: []
     }
   },
-  created () {
-    let res = axios.get('../../../server/query.ts')
-    let data = res.data
-    console.log(data)
+  mounted () {
+    axios.get('http://localhost:3000/')
+      .then((response) => {
+        console.log(response.data)
+        this.user = response.data
+      })
   }
 }
-
 </script>
