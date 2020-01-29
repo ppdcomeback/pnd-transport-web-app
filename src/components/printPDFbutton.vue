@@ -3,13 +3,14 @@
 </template>
 
 <script>
-
 import { Printd } from 'printd'
-import printURL from '@/components/ListJob-table/tableListJob'
+import { Prop } from 'vue-property-decorator'
 const btcss = 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css'
 const cssText = '#table-header{ color: yellow;}'
 const d = new Printd()
 
+const printPage = this.printurl
+const printURL = 'http://localhost:8080/' + 'print' + printPage
 export default {
   data () {
     return {
@@ -18,7 +19,7 @@ export default {
   },
   methods: {
     print () {
-      d.printURL(printURL.printURL, ({ launchPrint }) => {
+      d.printURL(printURL, ({ launchPrint }) => {
         console.log('Content loaded!')
         // fire printing!
         launchPrint()

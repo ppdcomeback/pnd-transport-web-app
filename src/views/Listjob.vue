@@ -9,7 +9,7 @@
         <h1>This is a listjob page</h1>
       </div>
       <div class="col-2">
-        <printPDFbutton/>
+        <printPDFbutton printurl = 'listjob'/>
       </div>
     </div>
     <div id="ListJobTable">
