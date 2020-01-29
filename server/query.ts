@@ -12,7 +12,7 @@ const config = {
 const connection = mysql.createConnection(config)
 
 // var test = require('./test.json')
-app.get('/', function (req, res) {
+app.get('/getlistjob', function (req, res) {
   res.setHeader('Content-Type', 'text/html')
   res.header('Access-Control-Allow-Origin', '*')
   res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept')

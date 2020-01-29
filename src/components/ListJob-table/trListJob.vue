@@ -2,9 +2,9 @@
 <template>
 
     <tbody class="table-hover">
-        <tr class="show">
-            <th scope="row"> {{ user.name }} </th>
-            <td> {{ user.lastname }} </td>
+        <tr id='v-for-object' class="show">
+            <th v-for="id in user" scope="row"> {{ id.id }} </th>
+            <td > {{ user.date }} </td>
             <td> {{ user.customer }} </td>
             <td>[sql]ชื่อพนักงาน</td>
             <td>[sql]ชนิดรถ</td>
@@ -22,12 +22,11 @@ export default {
   name: 'show',
   data () {
     return {
-
       user: []
     }
   },
   mounted () {
-    axios.get('http://localhost:3000/')
+    axios.get('http://localhost:3000/getlistjob')
       .then((response) => {
         console.log(response.data)
         this.user = response.data
@@ -36,7 +35,5 @@ export default {
         console.log(error)
       })
   }
-
 }
-
 </script>

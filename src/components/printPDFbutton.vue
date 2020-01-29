@@ -9,8 +9,9 @@ const btcss = 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min
 const cssText = '#table-header{ color: yellow;}'
 const d = new Printd()
 
-const printPage = this.printurl
-const printURL = 'http://localhost:8080/' + 'print' + printPage
+// const printPage = this.printurl
+// const printURL = 'http://localhost:8080/' + 'print' + printPage
+const printURL = 'http://localhost:8080/printlistjob'
 export default {
   data () {
     return {
