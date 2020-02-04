@@ -2,15 +2,15 @@
 <template>
 
     <tbody class="table-hover">
-        <tr id='v-for-object' class="show">
-            <th v-for="id in user" scope="row"> {{ id.id }} </th>
-            <td > {{ user.date }} </td>
-            <td> {{ user.customer }} </td>
-            <td>[sql]ชื่อพนักงาน</td>
-            <td>[sql]ชนิดรถ</td>
-            <td>[sql]รายการ</td>
-            <td class="text-right">[sql]0000$</td>
-            <td>[sql]การชำระเงิน</td>
+        <tr id='v-for-object' class="show" v-for="id in user" :key="id.id" scope="row">
+            <th > {{ id.list_id }} </th>
+            <td > {{ id.date }} </td>
+            <td> {{ id.customer }} </td>
+            <td>{{id.dealer}}</td>
+            <td>{{id.trucks}} </td>
+            <td>{{id.source}} {{id.destination}}</td>
+            <td class="text-right">{{id.price}}</td>
+            <td>{{id.status}}</td>
         </tr>
     </tbody>
 </template>
@@ -22,7 +22,7 @@ export default {
   name: 'show',
   data () {
     return {
-      user: []
+      user: {}
     }
   },
   mounted () {
