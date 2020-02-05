@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "server": "nodemon ./server/query.ts",
+    "server": "nodemon ./server/runserver.ts",
     "dev": "concurrently \"npm run serve\" \"npm run server\"",
     "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
