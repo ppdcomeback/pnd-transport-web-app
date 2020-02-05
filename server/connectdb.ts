@@ -1,3 +1,4 @@
+let connect
 const mysql = require('mysql')
 
 const config = {
@@ -6,6 +7,6 @@ const config = {
   password: '',
   database: 'pnd-web-serv'
 }
-const connection = mysql.createConnection(config)
+let con = mysql.createConnection(config)
 
-export default connection
+export default connect = con

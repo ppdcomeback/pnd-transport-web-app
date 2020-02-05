@@ -1,8 +1,8 @@
 const mysql = require('mysql')
 const express = require('express')
+const moment = require('moment')
 const app = express()
-var i = 0
-var row = ''
+
 const config = {
   host: 'localhost',
   user: 'root',
@@ -21,18 +21,10 @@ app.get('/getlistjob', function (req, res) {
     if (error) {
       return console.error(error.message)
     }
-    /* Object.keys(results).forEach(function (key) {
-      var row = results[key]
-      console.log(row)
-      res.send(row)
-    }) */
-    for (; i <= results.length; i++) {
-      row = results[i]
-      console.log(row)
-      // res.write(row)
-    }
     res.send(results)
-  })
+    console.log('ok')
+  }
+  )
 })
 
 app.listen(3000, function () {
