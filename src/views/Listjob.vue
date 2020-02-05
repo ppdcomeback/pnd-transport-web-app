@@ -12,9 +12,11 @@
         <printPDFbutton printurl = 'listjob'/>
       </div>
     </div>
+    <div>
+      <thListJob/>
+    </div>
     <div id="ListJobTable">
       <table class="table table-hover table-bordered">
-        <thListJob/>
         <trListJob/>
         <Summary/>
       </table>
