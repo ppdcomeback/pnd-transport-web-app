@@ -17,8 +17,6 @@
     </div>
     <div id="ListJobTable">
       <table class="table table-hover table-bordered">
-        <trListJob/>
-        <Summary/>
       </table>
     </div>
   </div>
@@ -37,9 +35,7 @@ export default {
   name: 'listjob',
   components: {
     routerlink,
-    Summary,
     thListJob,
-    trListJob,
     printPDFbutton
   }
 }
