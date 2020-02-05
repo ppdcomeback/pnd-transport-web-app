@@ -4,7 +4,7 @@
     <tbody class="table-hover">
         <tr id='v-for-object' class="show" v-for="id in list" :key="id.id" scope="row">
             <th > {{ id.list_id }} </th>
-            <td><t v-for="ti in t" :key="ti.id" scope="row">{{ ti }} </t></td>
+            <td>{{ id.date }}</td>
             <td> {{ id.customer }} </td>
             <td>{{id.dealer}}</td>
             <td>{{id.trucks}} </td>
@@ -23,8 +23,8 @@ export default {
   name: 'show',
   data () {
     return {
-      list: {},
-      t: {}
+      list: {}
+      // t: {}
     }
   },
   mounted () {
@@ -32,7 +32,7 @@ export default {
       .then((response) => {
         console.log(response.data)
         this.list = response.data
-        this.t = moment(this.list.date).format('DD/MM/YYYY')
+        // this.t = response.data
       })
       .catch((error) => {
         console.log(error)
